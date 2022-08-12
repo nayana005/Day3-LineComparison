@@ -3,9 +3,10 @@ package com.bl.line_comparison;
 import java.util.Scanner;
 
 public class LineComparison {
-    public static void main (String[] args) {
-     System.out.println("Welcome to LineComparison Computation Program");
-     Scanner sc = new Scanner(System.in);    
+	
+	public static void main(String[] args) {
+	
+	 Scanner sc = new Scanner(System.in);    
      System.out.print("Enter coordinates of x1:  "); 
      int x1 = sc.nextInt();
      System.out.print("Enter coordinates of x2:  ");
@@ -28,9 +29,12 @@ public class LineComparison {
      System.out.println("Total Length of line 2 is : " +length2);
      if( length1 == length2 ){
         System.out.println("TWO Lines are Equal");
-    }
-    else{
-        System.out.println("TWO Lines are Not Equal");
-    }
+    
+}
+    else if(length1 > length2){
+        System.out.println("Line1 is greater than Line2");
+                }
+    else
+       System.out.println("Line1 is smaller than Line2");
 }
 }
